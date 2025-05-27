@@ -24,6 +24,10 @@
         "android.permission.READ_EXTERNAL_STORAGE",
         "android.permission.WRITE_EXTERNAL_STORAGE",
         "android.permission.ACCESS_MEDIA_LOCATION",
+        "android.permission.INTERNET",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.ACCESS_MEDIA_LOCATION",
         "android.permission.INTERNET"
       ],
       "edgeToEdgeEnabled": true,
@@ -72,6 +76,12 @@
         "projectId": "c0a3f52a-c688-478b-9280-e1efe6f7790c"
       }
     },
-    "owner": "aladin997"
+    "owner": "aladin997",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/c0a3f52a-c688-478b-9280-e1efe6f7790c"
+    }
   }
 }
