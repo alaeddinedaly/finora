@@ -1,10 +1,9 @@
 import { images } from "@/constants/images";
-import { API_BASE_URL } from "@/constants/api";
 
 export async function fetchSelectedCard(userId: any, cardName: any) {
   try {
     const response = await fetch(
-      `${API_BASE_URL}/(api)/card?selected=true&user_id=${userId}&card_name=${cardName}`,
+      `/(api)/card?selected=true&user_id=${userId}&card_name=${cardName}`,
       {
         method: "GET",
       },
@@ -34,12 +33,9 @@ export async function fetchSelectedCard(userId: any, cardName: any) {
 
 export async function fetchCardNames(userId: any) {
   try {
-    const response = await fetch(
-      `${API_BASE_URL}/(api)/card?name=true&user_id=${userId}`,
-      {
-        method: "GET",
-      },
-    );
+    const response = await fetch(`/(api)/card?name=true&user_id=${userId}`, {
+      method: "GET",
+    });
 
     if (!response.ok) {
       throw new Error("Failed to fetch card Names");
@@ -58,12 +54,9 @@ export async function fetchCardNames(userId: any) {
 
 export async function fetchCards(userId: any) {
   try {
-    const response = await fetch(
-      `${API_BASE_URL}/(api)/card?user_id=${userId}`,
-      {
-        method: "GET",
-      },
-    );
+    const response = await fetch(`/(api)/card?user_id=${userId}`, {
+      method: "GET",
+    });
 
     if (!response.ok) {
       throw new Error("Failed to fetch cards");
@@ -93,7 +86,7 @@ export async function updateBalance(
 ) {
   try {
     const response = await fetch(
-      `${API_BASE_URL}/(api)/card?user_id=${userId}&card_name=${cardName}`,
+      `/(api)/card?user_id=${userId}&card_name=${cardName}`,
       {
         method: "PATCH",
         headers: {
@@ -121,12 +114,9 @@ export async function updateBalance(
 
 export async function fetchTotalCardBalance(userId: any) {
   try {
-    const response = await fetch(
-      `${API_BASE_URL}/(api)/card?balance=true&user_id=${userId}`,
-      {
-        method: "GET",
-      },
-    );
+    const response = await fetch(`/(api)/card?balance=true&user_id=${userId}`, {
+      method: "GET",
+    });
 
     if (!response.ok) {
       throw new Error("Failed to fetch total card balance");
@@ -147,7 +137,7 @@ export async function fetchTotalCardBalance(userId: any) {
 
 export async function deleteCard(userId: any, cardName: string) {
   try {
-    const response = await fetch(`${API_BASE_URL}/(api)/card`, {
+    const response = await fetch(`/(api)/card`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
