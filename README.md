@@ -1,50 +1,75 @@
-# Welcome to your Expo app 👋
+# 💰 Finance Management App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A full-stack personal finance management mobile application built with React Native and Expo, featuring secure authentication, custom card designs, goal tracking, and comprehensive financial analytics.
 
-## Get started
+## ✨ Features
 
-1. Install dependencies
+### 🏠 **Smart Dashboard**
+- Personalized home screen with user profile
+- Quick overview of latest transactions
+- Progress tracking for financial goals
+- Display of 3 most recently used cards
 
-   ```bash
-   npm install
-   ```
+### 💳 **Custom Card Management**
+- Create and manage multiple payment cards
+- Beautifully designed cards inspired by real-world designs (Apple Card, Mastercard, Visa)
+- Full customization: amount, card number, expiration, CVV
+- Visual card gallery with intuitive UI
+- *Note: Cards are for tracking purposes and not connected to real bank accounts*
 
-2. Start the app
+### 🎯 **Goal Tracking**
+- Set and monitor financial goals
+- Visual progress indicators
+- Track goal completion over time
 
-   ```bash
-   npx expo start
-   ```
+### 📊 **Analytics Dashboard**
+- Multiple interactive graphs and charts
+- Visualize spending patterns
+- Track financial trends
+- Data-driven insights
 
-In the output, you'll find options to open the app in a
+### 👤 **Profile Management**
+- Update personal information
+- Change profile picture
+- Manage account settings
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🛠️ Tech Stack
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+**Frontend:**
+- React Native
+- Expo
 
-## Get a fresh project
+**Backend:**
+- Node.js
+- MySQL
 
-When you're ready, run:
+**Authentication:**
+- Clerk (Secure user authentication)
+
+
+## 🚀 Getting Started
 
 ```bash
-npm run reset-project
+# Clone the repository
+git clone https://github.com/alaeddinedaly/finora.git
+
+# Install dependencies
+npm install
+
+# Start the app
+expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🔒 Security
 
-## Learn more
+- Secure authentication powered by Clerk
+- User data protection and privacy
+- Encrypted data transmission
 
-To learn more about developing your project with Expo, look at the following resources:
+## 📝 License
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+This project is licensed under the MIT License.
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Built with ❤️ using React Native & Expo
